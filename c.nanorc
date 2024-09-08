@@ -14,7 +14,7 @@ color brightwhite "[A-Za-z_][A-Za-z0-9_]*"
 
 ## Names of structs
 color brightyellow "struct [A-Za-z0-9_]*"
-color brightyellow "[A-Za-z]+_t[[:space:])\*]"
+color brightyellow "[A-Za-z_]+_t[[:space:])\*,]"
 
 ## Operators
 color brightred "[+*|=!\%]" "<" ">" "/" "-" "&"
