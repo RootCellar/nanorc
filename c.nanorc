@@ -1,6 +1,6 @@
 
 ## C Files
-syntax "C" "\.(c(c|pp|xx)?|C)$" "\.(h(h|pp|xx)?|H)$" "\.ii?$" "\.(def)$" "\.ino"
+syntax "C" "\.(c(u|c|pp|xx)?|C)$" "\.(h(h|pp|xx)?|H)$" "\.ii?$" "\.(def)$" "\.ino"
 magic "^(C|C\+\+) (source|program)"
 comment "//"
 
