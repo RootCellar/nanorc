@@ -6,6 +6,16 @@ comment "//"
 
 ## C syntax highlighting
 
+## Operators
+color brightred "[+*|=!\%]" "<" ">" "/" "-" "&"
+color brightred "[.:]"
+
+## Numbers
+color brightyellow "[0-9]+(\.[0-9]+)?"
+
+## Reset words so number hightlighting doesn't happen in the middle of a variable name
+color brightwhite "[A-Za-z_][A-Za-z0-9_]*"
+
 ## Names of structs
 color brightyellow "struct [A-Za-z0-9_]*"
 
@@ -35,15 +45,8 @@ color brightmagenta "'([^'\]|(\\["'abfnrtv\\]))'" "'\\(([0-3]?[0-7]{1,2}))'" "'\
 ## GCC builtins
 color green "__attribute__[[:space:]]*\(\([^)]*\)\)" "__(aligned|asm|builtin|hidden|inline|packed|restrict|section|typeof|weak)__"
 
-## Operators
-color brightred "[+*|=!\%]" "<" ">" "/" "-" "&"
-color brightred "[.:]"
-
 ## Puncuation
 color white "[,;]"
-
-## Numbers
-color brightyellow "[0-9]+(\.[0-9]+)?"
 
 ## Parenthesis, brackets, curly brackets
 color white "[(){}]" "\[" "\]"
