@@ -6,6 +6,9 @@ comment "//"
 
 ## C syntax highlighting
 
+## Periods
+color white "[.]"
+
 ## Numbers
 color brightyellow "[0-9]+(\.[0-9]+)?"
 
@@ -18,7 +21,7 @@ color brightyellow "[A-Za-z_]+_t[[:space:])\*,]"
 
 ## Operators
 color brightred "[+*|=!\%]" "<" ">" "/" "-" "&"
-color white "[.:?]"
+color white "[:?]"
 
 ## Other numbers (hexadecimal, binary)
 color brightyellow "0x[0-9A-Fa-f]+"
