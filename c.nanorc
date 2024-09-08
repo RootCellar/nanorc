@@ -6,10 +6,6 @@ comment "//"
 
 ## C syntax highlighting
 
-## Operators
-color brightred "[+*|=!\%]" "<" ">" "/" "-" "&"
-color white "[.:?]"
-
 ## Numbers
 color brightyellow "[0-9]+(\.[0-9]+)?"
 
@@ -18,6 +14,15 @@ color brightwhite "[A-Za-z_][A-Za-z0-9_]*"
 
 ## Names of structs
 color brightyellow "struct [A-Za-z0-9_]*"
+color brightyellow "[A-Za-z]+_t[[:space:])\*]"
+
+## Operators
+color brightred "[+*|=!\%]" "<" ">" "/" "-" "&"
+color white "[.:?]"
+
+## Other numbers (hexadecimal, binary)
+color brightyellow "0x[0-9A-Fa-f]+"
+color brightyellow "0b[01]+"
 
 ## Function names
 color brightcyan "[A-Za-z0-9_]*[[:space:]]*\("
