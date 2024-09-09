@@ -19,9 +19,17 @@ color brightwhite "[A-Za-z_][A-Za-z0-9_]*"
 color brightyellow "struct [A-Za-z0-9_]*"
 color brightyellow "[A-Za-z_]+_t[[:space:])\*,]"
 
+## Members of structs or objects
+#color white "\.[A-Za-z][A-Za-z0-9_]*"
+#color white "->[A-Za-z][A-Za-z0-9_]*"
+
 ## Operators
 color brightred "[+*|=!\%]" "<" ">" "/" "-" "&"
 color white "[:?]"
+
+## Names of structs when being operated on
+#color brightwhite "[A-Za-z][A-Za-z0-9_]*\."
+#color brightwhite "[A-Za-z][A-Za-z0-9_]*->"
 
 ## Other numbers (hexadecimal, binary)
 color brightyellow "0x[0-9A-Fa-f]+"
