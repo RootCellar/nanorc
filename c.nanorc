@@ -31,7 +31,7 @@ color brightyellow "0b[01]+"
 color brightcyan "[A-Za-z0-9_]*[[:space:]]*\("
 
 ## All uppercase phrases (macros, constants)
-color italic,brightred "\<[A-Z_][0-9A-Z_]+\>"
+color italic,brightred "\<[A-Z_][0-9A-Z_]*\>"
 
 ## Keywords
 color italic,brightmagenta "\<(float|double|bool|char|wchar_t|int|short|long|sizeof|enum|void|static|const|struct|union|typedef|extern|(un)?signed|inline)\>"
@@ -60,7 +60,8 @@ color white "[,;]"
 color white "[(){}]" "\[" "\]"
 
 ## Strings
-color brightgreen "<[^= 	]*>" ""(\\.|[^"])*""
+color brightgreen ""(\\.|[^"])*""
+color brightgreen "<[A-Za-z_][A-Za-z0-9_]*>"
 
 ## printf format specifiers
 color brightyellow "%'*(\#|(0-+))?(hh|h|l|ll|q|L|j|z|Z|t)?[A-Za-z]" "%%"
