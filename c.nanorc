@@ -61,7 +61,7 @@ color white "[(){}]" "\[" "\]"
 
 ## Strings
 color brightgreen ""(\\.|[^"])*""
-color brightgreen "<[A-Za-z_][A-Za-z0-9_<>]*>"
+color brightgreen "<[A-Za-z_][A-Za-z0-9_/:<>\.]*>"
 
 ## printf format specifiers
 color brightyellow "%'*(\#|(0-+))?(hh|h|l|ll|q|L|j|z|Z|t)?[A-Za-z]" "%%"
