@@ -2,6 +2,8 @@
 
 This repository holds ``{lang}.nanorc`` files that have improved definitions of syntax highlighting for various languages.
 
+Modified by Darian Marvel for personal use.
+
 ## Installation
 
 There are three ways to install this repo.
