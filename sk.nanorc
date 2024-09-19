@@ -26,7 +26,7 @@ color brightmagenta "\<(true|false|loop|function|if|else|else if|return|set|dele
 color brightred "\<(cancel the event|cancel event|local)\>"
 
 ## Names of variables
-color brightyellow "\{[A-Za-z0-9_\:\%-\*\{\}]*\}"
+color brightyellow "\{([A-Za-z0-9_\:\%-\*\{\}]|%[^%{}]*%)*\}"
 color brightyellow "loop-[A-Za-z]+"
 color brightyellow "event-[A-Za-z]+"
 
