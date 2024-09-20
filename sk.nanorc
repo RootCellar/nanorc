@@ -22,7 +22,7 @@ color brightwhite "[A-Za-z_][A-Za-z0-9_]*"
 color brightred "^[A-Za-z][A-Za-z[:space:]]+"
 
 ## Keywords
-color brightmagenta "\<(true|false|loop|function|if|else|else if|return|set|delete|stop|command)\>"
+color brightmagenta "\<(true|false|while|loop|continue|function|if|else|else if|return|set|delete|stop|exit|trigger)\>"
 color brightred "\<(cancel the event|cancel event|local)\>"
 
 ## Names of variables
