@@ -1,6 +1,7 @@
 set indicator true
 set linenumbers true
 set constantshow true
+set tabsize 4
 
 include ~/nanorc/nanorc.nanorc
 include ~/nanorc/c.nanorc
