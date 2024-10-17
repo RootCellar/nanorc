@@ -1,8 +1,11 @@
 # Improved Nano Syntax Highlighting Files
 
-This repository holds ``{lang}.nanorc`` files that have improved definitions of syntax highlighting for various languages.
+This repository holds `{lang}.nanorc` files that have improved definitions of syntax highlighting for various languages.
 
 Modified by Darian Marvel for personal use.
+
+The configuration here is intended to work on GNU nano 7.2.
+These files may raise errors on earlier versions of GNU nano.
 
 ## Installation
 
