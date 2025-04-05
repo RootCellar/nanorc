@@ -4,6 +4,20 @@ syntax "ASM" "\.(S|s|asm)$"
 magic "assembler source"
 comment "//"
 
+# Numbers
+## Decimal
+color brightyellow "[0-9]+(\.[0-9]+)?"
+
+## Reset words so number hightlighting doesn't happen in the middle of a variable name
+color white "[A-Za-z_][A-Za-z0-9_]*"
+
+# Instructions
+color brightwhite "^[[:space:]]*[A-Za-z][A-Za-z0-9]+"
+
+## Hex
+color brightyellow "0x[0-9A-Fa-f]+"
+
+# Uppercase Words
 color red "\<[A-Z_]{2,}\>"
 
 # Data
@@ -22,13 +36,17 @@ color brightcyan "^[[:space:]]*(call)"
 color brightmagenta "^[[:space:]]*(ret)"
 
 # Jumps
-color brightmagenta "^[[:space:]]*j(mp|e|ne|ns|g|l|ge|le|b)"
+color brightmagenta "^[[:space:]]*j(mp|e|ne|ns|g|l|ge|le|b|a)"
 
 # Labels
 icolor brightred "^[[:space:]]*[.0-9A-Z_]*:"
 
+# Registers
+color cyan "%[a-z0-9]+"
+
 # Special Characters
-color brightblack "(\.|:)"
+color brightblack "(\.|:|,)"
+color brightred "[-%@\$]"
 
 # Directives
 color brightcyan "^[[:space:]]*#[[:space:]]*(define|undef|include|ifn?def|endif|elif|else|if|warning|error)"
