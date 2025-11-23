@@ -4,13 +4,14 @@ set constantshow true
 set tabsize 4
 
 include ~/nanorc/nanorc.nanorc
-include ~/nanorc/c.nanorc
-include ~/nanorc/asm.nanorc
 include ~/nanorc/makefile.nanorc
 include ~/nanorc/sh.nanorc
 include ~/nanorc/markdown.nanorc
 
+include ~/nanorc/c.nanorc
+include ~/nanorc/asm.nanorc
 include ~/nanorc/python.nanorc
 include ~/nanorc/java.nanorc
 
 include ~/nanorc/sk.nanorc
+include ~/nanorc/yaml.nanorc
