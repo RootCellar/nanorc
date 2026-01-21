@@ -16,3 +16,4 @@ include ~/nanorc/java.nanorc
 include ~/nanorc/sk.nanorc
 include ~/nanorc/yaml.nanorc
 include ~/nanorc/json.nanorc
+include ~/nanorc/dotenv.nanorc
